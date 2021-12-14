@@ -180,3 +180,22 @@ a {
     background-image: url("./images/pattern-background-desktop.svg");
   }
 }
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2em 0;
+  gap: .5em;
+}
+
+.footer__link {
+  color: var(--primary-clr-400);
+}
+
+.footer__link:hover,
+.footer__link:focus,
+.footer__link:active {
+  text-decoration: none;
+  opacity: .7;
+}
