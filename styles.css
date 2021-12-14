@@ -1,0 +1,181 @@
+:root {
+  /* Colors */
+  --primary-clr-400: hsl(245, 75%, 52%);
+  --primary-clr-400-transparent: hsla(245, 75%, 52%, .3);
+  --primary-clr-400-more-transparent: hsla(245, 75%, 52%, .1);
+  --primary-clr-200: hsl(225, 100%, 94%);
+
+  --neutral-clr-600: hsl(223, 47%, 23%);
+  --neutral-clr-400: hsl(224, 23%, 55%);
+  --neutral-clr-200: hsl(225, 100%, 98%);
+
+  --sans-serif-font: "Red Hat Display", sans-serif;
+
+}
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./images/pattern-background-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 50%;
+  background-attachment: fixed;
+  background-color: var(--primary-clr-200)
+}
+
+body,
+h1,
+h2,
+p,
+button,
+a {
+  margin: 0;
+  padding: 0;
+  font-family: var(--sans-serif-font);
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10em 0;
+}
+
+.main__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  border-radius: 20px;
+  max-width: 90%;
+  box-shadow: 0 1em 1.5em var(--primary-clr-400-more-transparent);
+}
+
+.main__card__hero {
+  flex-shrink: 1;
+}
+
+.main__card__hero__img {
+  border-radius: 20px 20px 0 0;
+  flex-shrink: 1;
+  width: 100%;
+  height: auto;
+  padding-bottom: .5em;
+}
+
+.main__card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.3em;
+  padding: 2em;
+}
+
+.main__card__content__heading {
+  font-weight: 700;
+  font-size: 1.725rem;
+  color: var(--neutral-clr-600);
+}
+
+.main__card__content__text {
+  font-weight: 500;
+  font-size: 1rem;
+  color: var(--neutral-clr-400);
+  max-width: 30ch;
+  text-align: center;
+}
+
+.main__card__plan {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: var(--neutral-clr-200);
+  border-radius: 10px; 
+  padding: 1.5em;
+}
+
+.main__card__plan__cols {
+  display: flex;
+  gap: 1em;
+}
+
+.main__card__plan__rows {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.main__card__plan__heading {
+  font-size: 1rem;
+  color: var(--neutral-clr-600);
+  font-weight: 900;
+}
+
+.main__card__plan__price {
+  font-size: 1rem;
+  color: var(--neutral-clr-400)
+}
+
+.main__card__plan__change {
+  font-size: .9rem;
+  font-weight: 900;
+  color: var(--primary-clr-400);
+}
+
+.main__card__plan__change:visited {
+  color: var(--primary-clr-400);
+}
+
+.main__card__plan__change:hover, 
+.main__card__plan__change:focus,
+.main__card__plan__change:active {
+  opacity: .7;
+  text-decoration: none;
+}
+
+.main__card__btn {
+  border: none;
+  width: 100%;
+  padding: 1em;
+  border-radius: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--primary-clr-400);
+  flex-grow: 1;
+  text-align: center;
+  box-shadow: 0 1em 1.5em var(--primary-clr-400-transparent);
+  cursor: pointer;
+}
+
+.main__card__btn:hover, 
+.main__card__btn:focus,
+.main__card__btn:active {
+  opacity: .7;
+}
+
+.main__card__cancel {
+  text-decoration: none;
+  font-weight: 900;
+  color: var(--neutral-clr-600);
+  padding: .5em;
+  opacity: .7;
+}
+
+.main__card__cancel:hover,
+.main__card__cancel:focus,
+.main__card__cancel:active {
+  opacity: 1;
+}
+
+@media (min-width: 1400px) {
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+  }
+}
