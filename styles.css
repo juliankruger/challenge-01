@@ -175,12 +175,6 @@ a {
   opacity: 1;
 }
 
-@media (min-width: 1400px) {
-  body {
-    background-image: url("./images/pattern-background-desktop.svg");
-  }
-}
-
 .footer {
   display: flex;
   flex-direction: column;
@@ -198,4 +192,10 @@ a {
 .footer__link:active {
   text-decoration: none;
   opacity: .7;
+}
+
+@media (min-width: 1400px) {
+  body {
+    background-image: url("./images/pattern-background-desktop.svg");
+  }
 }
