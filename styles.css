@@ -22,7 +22,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 50%;
   background-attachment: fixed;
-  background-color: var(--primary-clr-200)
+  background-color: var(--primary-clr-200);
 }
 
 body,
